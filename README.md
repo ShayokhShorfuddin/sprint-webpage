@@ -1,2 +1,2 @@
 # Sprint Webpage
-A brand new webpage for Sprint!
+A brand new webpage for Sprint! ⚡
