@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+:root{
+    --light-blue:  #09C6F9;
+    --blue: #5796fc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.get-started{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.get-started span {
+    background: linear-gradient(to right, var(--light-blue), #685dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+
+
+
+
+.content-table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: 55px 9%;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+  
+.content-table thead tr {
+    background-image: linear-gradient(to right, var(--light-blue), #685dff);
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+  
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--blue);
+}
+  
+.btn{
+  text-decoration: none;
+}

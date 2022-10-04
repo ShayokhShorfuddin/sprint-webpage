@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+:root{
+    --light-blue:  #09C6F9;
+    --blue: #5796fc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 430px;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+}
+
+.texts-holder{
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.text{
+    font-size: 100px;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, var(--light-blue), #685dff);
+    font-family: 'Racing Sans One';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.slogan{
+    color: lightgrey;
+    font-size: 19px;
+}
+
+
+.navigation{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation li a {
+    padding: 0 14px;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 15px;
+}
+
+
+#icon{
+    color: var(--light-blue);
+    padding-right: 3px;
+}
+
+#icon:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+
+
+.cards{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.fast{
+    width: 320px;
+}
+
+.fast i{
+    background: linear-gradient(var(--light-blue), #685dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+
+.heading{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+.simple{
+    width: 320px;
+}
+
+.simple i{
+    background: linear-gradient(to right, var(--light-blue), #685dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.grow{
+    width: 320px;
+}
+
+.grow i{
+    background: linear-gradient(var(--light-blue), #685dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+button{
+    margin-left: 6px;
+    background-image: linear-gradient(to right, var(--light-blue), #685dff);
+    padding: 6px 19px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 14px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+
+
+.bottom {
+    margin-top: 150px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0 25px;
+}
+
+
+.bottom span {
+    background: linear-gradient(to right, var(--light-blue), #685dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .cards div{
+        margin: 40px;
+    }
+
+    .navigation li a {
+        font-size: 14px;
+    }
+
+    button{
+        font-size: 14px;
+    }
+
+    .bottom{
+        margin-top: 130px;
+    }
+
+}
+
+
+@media only screen and (max-width: 799px) {
+    .cards{
+        margin-top: 30px;
+    }
+
+    .texts-holder{
+        margin-top: 25px;
+    }
+
+    .box{
+        height: 300px;
+    }
+
+
+    .text{
+        font-size: 70px;
+    }
+
+    .slogan{
+        font-size: 14px;
+    }
+
+    .navigation{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 675px) {
+    .navigation{
+        right: 0;
+    }
+
+
+    #icon{
+        display: none;
+    }
+
+    
+    button{
+        display: none;
+    }
+
+    .navigation li a {
+        font-size: 13px;
+    }
+}
